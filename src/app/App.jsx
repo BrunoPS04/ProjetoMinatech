@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, useScroll, useSpring } from "motion/react";
+import logo from "../assets/imgminatech.webp"
 import equipe from "../assets/equipe-Minatech.png"
 import {
   Sparkles,
@@ -317,7 +318,7 @@ export default function App() {
               className="flex items-center"
             >
               <img
-                src="https://minatechbrasil.com.br/wp-content/uploads/2022/08/marca-Minatech.png"
+                src= {logo}
                 alt="Jornada Minatech"
                 className="h-10 md:h-14 w-auto"
               />
