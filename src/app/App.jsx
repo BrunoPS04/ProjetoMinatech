@@ -79,7 +79,7 @@ export default function App() {
       icon: Code2,
       title: "Programação",
       description:
-        "Aprenda a criar sites, apps e jogos do zero",
+        "Aprenda a criar sites,  TESTE apps e jogos do zero",
       color: "from-purple-500 to-pink-500",
     },
     {
