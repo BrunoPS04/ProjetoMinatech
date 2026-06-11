@@ -1,7 +1,13 @@
 import { useState, useEffect } from "react";
 import { motion, useScroll, useSpring } from "motion/react";
-import logo from "../assets/imgminatech.webp"
-import equipe from "../assets/equipe-Minatech.png"
+import logo from "../assets/imgminatech.webp";
+import equipe from "../assets/equipe-Minatech.png";
+import apoiador1 from "../assets/BeDiverse.png";
+import apoiador2 from "../assets/CreaSc.png";
+import apoiador3 from "../assets/Hogar.png";
+import apoiador4 from "../assets/Mesalva.webp";
+import apoiador5 from "../assets/MorroDoSilicio.png";
+import apoiador6 from "../assets/Neoway.png";
 import {
   Sparkles,
   Code2,
@@ -13,7 +19,6 @@ import {
   Users,
   BookOpen,
   ChevronDown,
-  Star,
   MessageCircle,
   Mail,
   Quote,
@@ -28,7 +33,6 @@ import {
   TrendingUp,
   Award,
   Building2,
-  Briefcase,
   GraduationCap,
   UserCircle,
 } from "lucide-react";
@@ -79,7 +83,7 @@ export default function App() {
       icon: Code2,
       title: "Programação",
       description:
-        "Aprenda a criar sites,  TESTE apps e jogos do zero",
+        "Aprenda a criar sites, apps e jogos do zero",
       color: "from-purple-500 to-pink-500",
     },
     {
@@ -266,12 +270,7 @@ export default function App() {
   ];
 
   const partners = [
-    "https://via.placeholder.com/200x80/8B5CF6/ffffff?text=Parceiro+1",
-    "https://via.placeholder.com/200x80/EC4899/ffffff?text=Parceiro+2",
-    "https://via.placeholder.com/200x80/6366F1/ffffff?text=Parceiro+3",
-    "https://via.placeholder.com/200x80/F43F5E/ffffff?text=Parceiro+4",
-    "https://via.placeholder.com/200x80/8B5CF6/ffffff?text=Parceiro+5",
-    "https://via.placeholder.com/200x80/EC4899/ffffff?text=Parceiro+6",
+    apoiador1, apoiador2, apoiador3, apoiador4, apoiador5, apoiador6
   ];
 
   const leadership = [
