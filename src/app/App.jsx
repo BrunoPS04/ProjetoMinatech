@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, useScroll, useSpring } from "motion/react";
+import logo from "../assets/imgminatech.webp"
 import equipe from "../assets/equipe-Minatech.png"
 import {
   Sparkles,
@@ -78,7 +79,7 @@ export default function App() {
       icon: Code2,
       title: "Programação",
       description:
-        "Aprenda a criar sites, apps e jogos do zero",
+        "Aprenda a criar sites,  TESTE apps e jogos do zero",
       color: "from-purple-500 to-pink-500",
     },
     {
@@ -317,7 +318,7 @@ export default function App() {
               className="flex items-center"
             >
               <img
-                src="https://minatechbrasil.com.br/wp-content/uploads/2022/08/marca-Minatech.png"
+                src= {logo}
                 alt="Jornada Minatech"
                 className="h-10 md:h-14 w-auto"
               />
