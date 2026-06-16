@@ -8,6 +8,11 @@ import apoiador3 from "../assets/Hogar.png";
 import apoiador4 from "../assets/Mesalva.webp";
 import apoiador5 from "../assets/MorroDoSilicio.png";
 import apoiador6 from "../assets/Neoway.png";
+import Mina_Tech_foto_principal from "../assets/Mina_Tech_foto_principal.jpg"
+import fotos_site_1 from "../assets/fotos_site_1.png"
+import fotos_site_2 from "../assets/fotos_site_2.png"
+import fotos_site_3 from "../assets/fotos_site_3.png"
+import fotos_site_4 from "../assets/fotos_site_4.png"
 import {
   Sparkles,
   Code2,
@@ -177,23 +182,23 @@ export default function App() {
 
   const testimonials = [
     {
-      name: "Ana Clara",
-      age: 16,
-      text: "Antes eu achava que programação não era pra mim. Hoje já criei meu primeiro app e me sinto capaz de tudo!",
+      name: "Isabella Soares Martins",
+      // age: 16,
+      text: "Durante a temporada de agosto a outubro, participei do Minetech e consegui meu certificado de participação. E pra mim isso é bem mais do que sé um papel. Aprendi, crecri e saí de lá sinda mais certa do caminho que quero seguir. Obrigada, Minatech!! Ano que vem tem mais da minha trajetória na jornada Minatech",
       image:
         "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400",
     },
     {
-      name: "Beatriz",
-      age: 15,
-      text: "Encontrei amigas incríveis e descobri que adoro matemática quando ela é aplicada a coisas reais.",
+      name: "Eli Bazzi",
+      // age: 15,
+      text: "Ontem concluímos a Jornada MinaTech de 2025 e eu gostaria de expressar meus agradecimentos pela oportunidade de ter participado dessa Jornada e a minha admiração por todas as mininas participarntes, voluntárias, todas palestrantesa Tatiana Takimoto. Mais do que um programa de incentivo as carrerias STEAM, o MinaTech foi uma jornada de autoconhecimento e MinaTech desenvolvimento oportuno para esse meu início de carrera. Foi um privilégio aprrender e trocar conhecimentis com profissionais ta talentosas e inspiradoras, que fizeram oit em pouco tempo. Cada encontro foi uma valiosa oportunidade de aprendizado que levo comigo. O MinaTech não apena apenas ampliou meus horizontes, como mrothu me mostru, esla multo clara, as sas porrtas do meu futuro soi na propria minaila incirativa e caragen.",
       image:
         "https://images.unsplash.com/photo-1580489944761-15a19d654956?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400",
     },
     {
       name: "Juliana",
-      age: 17,
-      text: "A Jornada Minatech mudou minha visão de futuro. Agora quero fazer faculdade de Ciência da Computação!",
+      // age: 17,
+      text: "A Jornada Minatech mudou minha visão de futuro. Cada palestra, cada dinâmica e cada contato com áreas novas foi simplesmente muito rico. Agora quero fazer faculdade de Ciência da Computação!",
       image:
         "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400",
     },
@@ -273,27 +278,6 @@ export default function App() {
     apoiador1, apoiador2, apoiador3, apoiador4, apoiador5, apoiador6
   ];
 
-  const leadership = [
-    {
-      name: "Maria Silva",
-      role: "Fundadora e Diretora Executiva",
-      bio: "Engenheira de Software com mais de 10 anos de experiência em tecnologia e impacto social.",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400",
-    },
-    {
-      name: "Ana Paula Costa",
-      role: "Coordenadora Pedagógica",
-      bio: "Educadora apaixonada por democratizar o acesso à tecnologia para meninas.",
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400",
-    },
-    {
-      name: "Juliana Santos",
-      role: "Gerente de Parcerias",
-      bio: "Especialista em desenvolvimento de parcerias estratégicas e captação de recursos.",
-      image: "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400",
-    },
-  ];
-
   return (
     <div className="min-h-screen bg-white overflow-x-hidden">
       {/* Progress Bar */}
@@ -317,7 +301,7 @@ export default function App() {
               className="flex items-center"
             >
               <img
-                src= {logo}
+                src={logo}
                 alt="Jornada Minatech"
                 className="h-10 md:h-14 w-auto"
               />
@@ -573,7 +557,7 @@ export default function App() {
             >
               <div className="relative rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://minatechbrasil.com.br/wp-content/uploads/2024/08/IMG_9604-1-2048x1536.jpg"
+                  src={Mina_Tech_foto_principal}
                   alt="Grupo de meninas da Jornada Minatech"
                   className="w-full h-auto"
                 />
@@ -750,7 +734,7 @@ export default function App() {
                     className="rounded-2xl overflow-hidden shadow-lg"
                   >
                     <ImageWithFallback
-                      src="https://minatechbrasil.com.br/wp-content/uploads/2024/08/site-minatech-2-768x433.png"
+                      src={fotos_site_1}
                       alt="Estudantes colaborando"
                       className="w-full h-auto"
                     />
@@ -760,7 +744,7 @@ export default function App() {
                     className="rounded-2xl overflow-hidden shadow-lg"
                   >
                     <ImageWithFallback
-                      src="https://minatechbrasil.com.br/wp-content/uploads/2024/08/site-minatech-1-768x433.png"
+                      src={fotos_site_2}
                       alt="Grupo de estudantes"
                       className="w-full h-auto"
                     />
@@ -772,7 +756,7 @@ export default function App() {
                     className="rounded-2xl overflow-hidden shadow-lg"
                   >
                     <ImageWithFallback
-                      src="https://minatechbrasil.com.br/wp-content/uploads/2023/08/site-minatech-4-768x433.png"
+                      src={fotos_site_3}
                       alt="Estudante no laptop"
                       className="w-full h-auto"
                     />
@@ -782,7 +766,7 @@ export default function App() {
                     className="rounded-2xl overflow-hidden shadow-lg"
                   >
                     <ImageWithFallback
-                      src="https://minatechbrasil.com.br/wp-content/uploads/2024/08/site-minatech-6-768x433.png"
+                      src={fotos_site_4}
                       alt="Estudante sorrindo"
                       className="w-full h-auto"
                     />
@@ -1316,7 +1300,7 @@ export default function App() {
                       {testimonial.name}
                     </h4>
                     <p className="text-xs md:text-sm text-gray-500">
-                      {testimonial.age} anos
+                      {/* {testimonial.age} anos */}
                     </p>
                   </div>
                 </div>
@@ -1373,7 +1357,7 @@ export default function App() {
                   <img
                     src={partner}
                     alt={`Parceiro ${index + 1}`}
-                    className="h-16 w-auto opacity-60 hover:opacity-100 transition-opacity"
+                    className="h-16 w-auto opacity-80 hover:opacity-100 transition-opacity"
                   />
                 </motion.div>
               ))}
