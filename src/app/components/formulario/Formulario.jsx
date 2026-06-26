@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import logo from "../../../assets/imgminatech.webp";
 import {
   User,
   Phone,
@@ -94,14 +95,14 @@ function Sidebar({ current }) {
   return (
     <aside className="w-72 shrink-0 flex flex-col px-6 py-8 bg-white border-r border-[#EDE9F8]">
       {/* Logo */}
-      <div className="flex items-center gap-2.5 mb-10">
+      <div className="flex items-center justify-center mb-10">
         <div
-          className="w-9 h-9 rounded-xl flex items-center justify-center"
-          style={{ background: "linear-gradient(135deg,#8B3DFF,#FF4D8D)" }}
+          className="w-45 h-35   flex items-center justify-center"
+          // style={{ background: "linear-gradient(135deg,#8B3DFF,#FF4D8D)", borderRadius: "100%" }}
         >
-          <Cpu size={18} className="text-white" />
+          <img src={logo} alt="Logo" />
         </div>
-        <span className="font-bold text-xl tracking-tight text-foreground">MinaTech</span>
+        {/* <span className="font-bold text-xl tracking-tight text-foreground">MinaTech</span> */}
       </div>
 
       {/* Progress bar */}
@@ -515,8 +516,8 @@ export default function Formulario() {
   const currentStepInfo = STEPS[step - 1] || STEPS[STEPS.length - 1];
 
   return (
-    <div className="min-h-screen flex" style={{ fontFamily: "'Poppins', sans-serif", background: "#FAF7FF" }}>
-      <Sidebar current={submitted ? STEPS.length + 1 : step} />
+    <div className="min-h-screen flex" style={{ fontFamily: "'Poppins', sans-serif", background: "#D9D9D9   " }}>
+      <Sidebar current={submitted ? STEPS.length : step} />
 
       <main className="flex-1 flex flex-col items-center justify-center py-10 px-6 lg:px-16">
         <div className="w-full max-w-xl mb-8">
