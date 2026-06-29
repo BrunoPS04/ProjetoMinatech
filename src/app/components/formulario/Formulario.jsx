@@ -24,16 +24,16 @@ import {
 // ─── CONSTANTES ──────────────────────────────────────────────────────────────
 
 const STEPS = [
-  { id: 1,  label: "Dados pessoais",      sublabel: "Informações básicas",       icon: <User size={16} /> },
-  { id: 2,  label: "Contato",                 sublabel: "Como te encontrar",        icon: <Phone size={16} /> },
-  { id: 3,  label: "Diversidade e Inclusão",  sublabel: "Sobre você",                icon: <Heart size={16} /> },
-  { id: 4,  label: "Situação familiar",        sublabel: "Contexto familiar",        icon: <Home size={16} /> },
-  { id: 5,  label: "Acesso digital",           sublabel: "Recursos tecnológicos",    icon: <Monitor size={16} /> },
-  { id: 6,  label: "Informações Acadêmicas",  sublabel: "Sua trajetória escolar",   icon: <GraduationCap size={16} /> },
-  { id: 7,  label: "Interesse na Tecnologia",  sublabel: "Áreas de interesse",       icon: <Code2 size={16} /> },
-  { id: 8,  label: "Disponibilidade",          sublabel: "Sua agenda",               icon: <Clock size={16} /> },
-  { id: 9,  label: "Motivação",                sublabel: "Conte sobre você",         icon: <FileText size={16} /> },
-  { id: 10, label: "Termos",                   sublabel: "Confirmação final",        icon: <Shield size={16} /> },
+  { id: 1, label: "Dados pessoais", sublabel: "Informações básicas", icon: <User size={16} /> },
+  { id: 2, label: "Contato", sublabel: "Como te encontrar", icon: <Phone size={16} /> },
+  { id: 3, label: "Diversidade e Inclusão", sublabel: "Sobre você", icon: <Heart size={16} /> },
+  { id: 4, label: "Situação familiar", sublabel: "Contexto familiar", icon: <Home size={16} /> },
+  { id: 5, label: "Acesso digital", sublabel: "Recursos tecnológicos", icon: <Monitor size={16} /> },
+  { id: 6, label: "Informações Acadêmicas", sublabel: "Sua trajetória escolar", icon: <GraduationCap size={16} /> },
+  { id: 7, label: "Interesse na Tecnologia", sublabel: "Áreas de interesse", icon: <Code2 size={16} /> },
+  { id: 8, label: "Disponibilidade", sublabel: "Sua agenda", icon: <Clock size={16} /> },
+  { id: 9, label: "Motivação", sublabel: "Conte sobre você", icon: <FileText size={16} /> },
+  { id: 10, label: "Termos", sublabel: "Confirmação final", icon: <Shield size={16} /> },
 ];
 
 const ESCOLARIDADE = [
@@ -59,16 +59,16 @@ const PESSOAS_CASA = ["1", "2", "3", "4", "5", "6 ou mais"];
 const NEURODIVERGENTE_OPTIONS = ["Sim", "Não", "Não sei ao certo", "Prefiro não dizer"];
 
 const ESTADOS = [
-  "AC","AL","AP","AM","BA","CE","DF","ES","GO","MA","MT","MS","MG",
-  "PA","PB","PR","PE","PI","RJ","RN","RS","RO","RR","SC","SP","SE","TO",
+  "AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG",
+  "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO",
 ];
 
 const SERIES = [
-  "1º ano do Ensino Fundamental","2º ano","3º ano","4º ano","5º ano",
-  "6º ano","7º ano","8º ano","9º ano",
-  "1º ano do Ensino Médio","2º ano do Ensino Médio","3º ano do Ensino Médio",
-  "1º semestre (Superior)","2º semestre","3º semestre","4º semestre",
-  "5º semestre","6º semestre","7º semestre","8º semestre ou mais",
+  "1º ano do Ensino Fundamental", "2º ano", "3º ano", "4º ano", "5º ano",
+  "6º ano", "7º ano", "8º ano", "9º ano",
+  "1º ano do Ensino Médio", "2º ano do Ensino Médio", "3º ano do Ensino Médio",
+  "1º semestre (Superior)", "2º semestre", "3º semestre", "4º semestre",
+  "5º semestre", "6º semestre", "7º semestre", "8º semestre ou mais",
 ];
 
 const HORAS_SEMANA = [
@@ -109,7 +109,7 @@ const INITIAL_STATE = {
 
 // ─── HELPERS COMPARTILHADOS ──────────────────────────────────────────────────
 const gradientStyle = { background: "linear-gradient(135deg,#8B3DFF 0%,#D946EF 50%,#FF4D8D 100%)" };
-const gradientText  = { background: "linear-gradient(90deg,#8B3DFF,#D946EF,#FF4D8D)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" };
+const gradientText = { background: "linear-gradient(90deg,#8B3DFF,#D946EF,#FF4D8D)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" };
 
 // ─── BASE COMPONENTS ─────────────────────────────────────────────────────────
 function StepIndicator({ current, total }) {
@@ -138,14 +138,14 @@ function Sidebar({ current }) {
 
   return (
     <>
-      <header className="md:hidden w-full bg-white border-b border-slate-100 px-6 py-4 flex items-center justify-between sticky top-0 z-50 shadow-sm">
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-xl flex items-center justify-center" style={gradientStyle}>
-            <Cpu size={16} className="text-white" />
+      <header className="md:hidden w-full bg-white border-b border-slate-100 px-6  flex items-center justify-between sticky top-0 z-50 shadow-sm">
+        <div className="flex items-center ">
+          <div className="w-30 h-22 rounded-xl flex items-center justify-center">
+            <img src={logo} alt="Logo" />
           </div>
-          <span className="font-bold text-lg tracking-tight text-foreground">MinaTech</span>
+          {/* <span className="font-bold text-lg tracking-tight text-foreground">MinaTech</span> */}
         </div>
-        
+
         <div className="flex items-center gap-2.5 bg-[#FAF7FF] px-3 py-1.5 rounded-full border border-[#EDE9F8]">
           <div className="w-6 h-6 rounded-full flex items-center justify-center text-white text-xs" style={gradientStyle}>
             {STEPS[current - 1]?.icon || current}
@@ -155,18 +155,21 @@ function Sidebar({ current }) {
       </header>
 
       <aside className="hidden md:flex w-72 shrink-0 flex-col px-6 py-8 overflow-y-auto max-h-screen border-r border-slate-100" style={{ scrollbarWidth: "none" }}>
-        <div className="flex items-center gap-2.5 mb-10">
-          <div className="w-9 h-9 rounded-xl flex items-center justify-center" style={gradientStyle}>
-            <Cpu size={18} className="text-white" />
+        <div className="flex items-center justify-center mb-10">
+          <div
+            className="w-45 h-35   flex items-center justify-center"
+          // style={{ background: "linear-gradient(135deg,#8B3DFF,#FF4D8D)", borderRadius: "100%" }}
+          >
+            <img src={logo} alt="Logo" />
           </div>
-          <span className="font-bold text-xl tracking-tight text-foreground">MinaTech</span>
+          {/* <span className="font-bold text-xl tracking-tight text-foreground">MinaTech</span> */}
         </div>
 
         <StepIndicator current={current} total={STEPS.length} />
 
         <nav className="flex flex-col gap-0">
           {STEPS.map((step, idx) => {
-            const isDone   = step.id < current;
+            const isDone = step.id < current;
             const isActive = step.id === current;
             return (
               <div key={step.id} className="flex gap-3">
@@ -345,7 +348,7 @@ function Step5({ data, onChange }) {
     <div className="flex flex-col gap-4">
       <p className="text-sm font-semibold text-foreground">Quais dispositivos você tem em casa?</p>
       <div className="flex items-center gap-4 p-4 rounded-2xl border transition-all duration-200" style={data.computador.selected ? { borderColor: "#8B3DFF", background: "#FAF7FF" } : { borderColor: "#E5E7EB", background: "#fff" }} onClick={() => onChange("computador", { ...data.computador, selected: !data.computador.selected, qty: data.computador.selected ? 0 : 1 })}>
-        <GradientCheckbox checked={data.computador.selected} onChange={() => {}} />
+        <GradientCheckbox checked={data.computador.selected} onChange={() => { }} />
         <div className="flex-1 flex items-center gap-3">
           <div className="w-8 h-8 rounded-lg flex items-center justify-center" style={{ background: "linear-gradient(135deg,#8B3DFF20,#D946EF20)" }}>
             <Laptop size={15} className="text-[#8B3DFF]" />
@@ -355,7 +358,7 @@ function Step5({ data, onChange }) {
         {data.computador.selected && <Counter value={data.computador.qty} onChange={(v) => onChange("computador", { ...data.computador, qty: v })} />}
       </div>
       <div className="flex items-center gap-4 p-4 rounded-2xl border transition-all duration-200" style={data.celular.selected ? { borderColor: "#8B3DFF", background: "#FAF7FF" } : { borderColor: "#E5E7EB", background: "#fff" }} onClick={() => onChange("celular", { ...data.celular, selected: !data.celular.selected, qty: data.celular.selected ? 0 : 1 })}>
-        <GradientCheckbox checked={data.celular.selected} onChange={() => {}} />
+        <GradientCheckbox checked={data.celular.selected} onChange={() => { }} />
         <div className="flex-1 flex items-center gap-3">
           <div className="w-8 h-8 rounded-lg flex items-center justify-center" style={{ background: "linear-gradient(135deg,#D946EF20,#FF4D8D20)" }}>
             <Smartphone size={15} className="text-[#D946EF]" />
@@ -365,7 +368,7 @@ function Step5({ data, onChange }) {
         {data.celular.selected && <Counter value={data.celular.qty} onChange={(v) => onChange("celular", { ...data.celular, qty: v })} />}
       </div>
       <div className="flex items-center gap-4 p-4 rounded-2xl border transition-all duration-200" style={data.nenhum ? { borderColor: "#8B3DFF", background: "#FAF7FF" } : { borderColor: "#E5E7EB", background: "#fff" }} onClick={() => onChange("nenhum", !data.nenhum)}>
-        <GradientCheckbox checked={data.nenhum} onChange={() => {}} />
+        <GradientCheckbox checked={data.nenhum} onChange={() => { }} />
         <span className="text-sm font-medium text-foreground">Nenhum dos acima</span>
       </div>
     </div>
@@ -506,7 +509,7 @@ function Step10({ data, onChange }) {
         onClick={() => onChange("termoVeracidade", !data.termoVeracidade)}
       >
         <div className="mt-0.5">
-          <GradientCheckbox checked={data.termoVeracidade} onChange={() => {}} />
+          <GradientCheckbox checked={data.termoVeracidade} onChange={() => { }} />
         </div>
         <div>
           <p className="text-sm font-semibold text-foreground">Declaro que todas as informações fornecidas são verdadeiras.</p>
@@ -520,7 +523,7 @@ function Step10({ data, onChange }) {
         onClick={() => onChange("termoLGPD", !data.termoLGPD)}
       >
         <div className="mt-0.5">
-          <GradientCheckbox checked={data.termoLGPD} onChange={() => {}} />
+          <GradientCheckbox checked={data.termoLGPD} onChange={() => { }} />
         </div>
         <div>
           <p className="text-sm font-semibold text-foreground">Autorizo o uso dos meus dados conforme a Lei Geral de Proteção de Dados (LGPD).</p>
@@ -534,7 +537,7 @@ function Step10({ data, onChange }) {
         onClick={() => onChange("termoNoticias", !data.termoNoticias)}
       >
         <div className="mt-0.5">
-          <GradientCheckbox checked={data.termoNoticias} onChange={() => {}} />
+          <GradientCheckbox checked={data.termoNoticias} onChange={() => { }} />
         </div>
         <div>
           <p className="text-sm font-semibold text-foreground">Desejo receber novidades sobre futuros cursos e projetos.</p>
@@ -554,22 +557,22 @@ function Step10({ data, onChange }) {
 
 function SuccessScreen({ onReset }) {
   return (
-    <motion.div 
-      initial={{ opacity: 0, scale: 0.95 }} 
-      animate={{ opacity: 1, scale: 1 }} 
+    <motion.div
+      initial={{ opacity: 0, scale: 0.95 }}
+      animate={{ opacity: 1, scale: 1 }}
       className="flex flex-col items-center justify-center text-center py-4 gap-5"
     >
       <div className="w-20 h-20 rounded-full flex items-center justify-center shadow-lg shadow-[#8B3DFF]/20" style={gradientStyle}>
         <Check size={36} className="text-white" strokeWidth={2.5} />
       </div>
-      
+
       <div>
         <h3 className="text-2xl font-bold text-[#1E1B24] mb-2">Inscrição enviada!</h3>
         <p className="text-slate-500 text-sm max-w-xs mx-auto leading-relaxed">
           Obrigada por se inscrever no MinaTech. Em breve entraremos em contato com as próximas etapas.
         </p>
       </div>
-      
+
       <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-white text-sm font-medium shadow-md" style={gradientStyle}>
         <Heart size={15} fill="white" />
         Boa sorte na sua jornada!
@@ -614,15 +617,15 @@ export default function MinaTechForm() {
 
   const renderActiveStep = () => {
     switch (currentStep) {
-      case 1:  return <Step1 data={formData} onChange={handleFieldChange} />;
-      case 2:  return <Step2 data={formData} onChange={handleFieldChange} />;
-      case 3:  return <Step3 data={formData} onChange={handleFieldChange} />;
-      case 4:  return <Step4 data={formData} onChange={handleFieldChange} />;
-      case 5:  return <Step5 data={formData} onChange={handleFieldChange} />;
-      case 6:  return <Step6 data={formData} onChange={handleFieldChange} />;
-      case 7:  return <Step7 data={formData} onChange={handleFieldChange} />;
-      case 8:  return <Step8 data={formData} onChange={handleFieldChange} />;
-      case 9:  return <Step9 data={formData} onChange={handleFieldChange} />;
+      case 1: return <Step1 data={formData} onChange={handleFieldChange} />;
+      case 2: return <Step2 data={formData} onChange={handleFieldChange} />;
+      case 3: return <Step3 data={formData} onChange={handleFieldChange} />;
+      case 4: return <Step4 data={formData} onChange={handleFieldChange} />;
+      case 5: return <Step5 data={formData} onChange={handleFieldChange} />;
+      case 6: return <Step6 data={formData} onChange={handleFieldChange} />;
+      case 7: return <Step7 data={formData} onChange={handleFieldChange} />;
+      case 8: return <Step8 data={formData} onChange={handleFieldChange} />;
+      case 9: return <Step9 data={formData} onChange={handleFieldChange} />;
       case 10: return <Step10 data={formData} onChange={handleFieldChange} />;
       default: return null;
     }
@@ -633,16 +636,16 @@ export default function MinaTechForm() {
   return (
     <div className="flex flex-col md:flex-row min-h-screen bg-[#FDFBFF] text-[#1E1B24]">
       <Sidebar current={isSubmitted ? STEPS.length : currentStep} />
-      
-      <main className="flex-1 flex flex-col items-center justify-center px-4 py-8 md:px-6 md:py-12 bg-[#F6F2FF]/40">
+
+      <main className="flex-1 flex flex-col items-center justify-center px-4 py-8 md:px-6 md:py-12 bg-[#D9D9D9]/40">
         {isSubmitted ? (
           <div className="w-full max-w-xl bg-white rounded-3xl p-6 md:p-10 shadow-xl shadow-[#8B3DFF]/5 border border-slate-100">
-            <SuccessScreen 
+            <SuccessScreen
               onReset={() => {
                 setIsSubmitted(false);
                 setCurrentStep(1);
                 setFormData(INITIAL_STATE);
-              }} 
+              }}
             />
           </div>
         ) : (
@@ -726,8 +729,8 @@ export default function MinaTechForm() {
                   className="h-1.5 rounded-full transition-all duration-300"
                   style={{
                     width: currentStep === step.id ? "24px" : "6px",
-                    background: currentStep === step.id 
-                      ? "linear-gradient(90deg,#8B3DFF,#D946EF)" 
+                    background: currentStep === step.id
+                      ? "linear-gradient(90deg,#8B3DFF,#D946EF)"
                       : currentStep > step.id ? "#8B3DFF" : "#E5DFF5"
                   }}
                 />
