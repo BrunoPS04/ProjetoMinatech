@@ -80,7 +80,6 @@ export default function App() {
   if (currentPage === "formulario") {
     return (
       <div className="relative min-h-screen bg-[#FAF7FF]">
-        {/* Botão para voltar caso o usuário desista */}
         <button 
           onClick={() => setCurrentPage("landing")}
           className="fixed top-6 right-6 z-50 px-4 py-2 bg-white text-purple-600 rounded-full shadow-md hover:shadow-lg font-medium border border-purple-100 transition-all text-sm cursor-pointer"
@@ -538,11 +537,12 @@ export default function App() {
                   </span>
                 </motion.button>
                 <motion.button
+                  
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="px-6 md:px-8 py-3 md:py-4 bg-white/10 backdrop-blur-sm text-white border-2 border-white/30 rounded-full hover:bg-white/20 transition-colors"
                 >
-                  Saiba mais
+                 <a href="#sobre">Saiba mais</a>
                 </motion.button>
               </div>
 
