@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import logo from "../../../assets/imgminatech.webp";
 import {
   User,
   Phone,
