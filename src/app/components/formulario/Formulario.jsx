@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import logo from "../../../assets/imgminatech.webp";
+import { salvarInscricao } from "../../../services/formularioService";
 import {
   User,
   Phone,
@@ -607,13 +608,24 @@ export default function MinaTechForm() {
     if (currentStep > 1) setCurrentStep((prev) => prev - 1);
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (formData.termoVeracidade && formData.termoLGPD) {
-      console.log("Dados enviados:", formData);
-      setIsSubmitted(true);
-    }
-  };
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  if (!formData.termoVeracidade || !formData.termoLGPD) {
+    return;
+  }
+
+  try {
+    await salvarInscricao(formData);
+
+    console.log("Dados enviados:", formData);
+
+    setIsSubmitted(true);
+  } catch (error) {
+    console.error("Erro ao salvar inscrição:", error);
+    alert("Erro ao enviar inscrição. Tente novamente.");
+  }
+};
 
   const renderActiveStep = () => {
     switch (currentStep) {
